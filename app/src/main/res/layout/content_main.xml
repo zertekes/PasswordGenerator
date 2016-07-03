@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nazoweb.passwordgenerator.MainActivity"
+    android:background="@drawable/ppicture"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:text="Preferred number of characters"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/prefNumText"
+        android:textColor="#d5d2d2"
+        android:background="#b745363e"
+        android:layout_alignParentLeft="false"
+        android:gravity="center"
+        android:typeface="sans"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/charNumber"
+        android:background="#b745363e"
+        android:textColor="#d5d2d2"
+        android:layout_below="@+id/prefNumText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/generateButton"
+        android:backgroundTint="#46323D"
+        android:text="generate"
+        android:layout_below="@+id/charNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:textColor="#d5d2d2"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/generatedPassword"
+        android:layout_below="@+id/charNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:background="#b745363e"
+        android:textColor="#d5d2d2"
+        android:gravity="center"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="32dp"
+        android:text="SAVE"
+        android:id="@+id/popUpButton"
+        android:layout_below="@+id/generatedPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:textColor="#d5d2d2"
+        android:background="#46323D"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+</RelativeLayout>
