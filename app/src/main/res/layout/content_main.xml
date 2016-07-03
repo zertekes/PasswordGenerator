@@ -30,7 +30,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:layout_width="80dp"
+        android:layout_width="84dp"
         android:layout_height="30dp"
         android:inputType="numberDecimal"
         android:ems="10"
@@ -44,9 +44,9 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="32dp"
         android:id="@+id/generateButton"
-        android:backgroundTint="#46323D"
+        android:background="#46323D"
         android:text="generate"
         android:layout_below="@+id/charNumber"
         android:layout_centerHorizontal="true"
@@ -54,31 +54,34 @@
         android:textColor="#d5d2d2"
         android:textStyle="bold" />
 
-    <EditText
+    <TextView
         android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:inputType="textMultiLine"
+        android:layout_height="160dp"
         android:ems="10"
         android:id="@+id/generatedPassword"
-        android:layout_below="@+id/charNumber"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="29dp"
         android:background="#b745363e"
         android:textColor="#d5d2d2"
+        android:scrollbars="vertical"
         android:gravity="center"
-        android:nestedScrollingEnabled="true" />
+        android:scrollbarStyle="insideInset"
+        android:selectAllOnFocus="false"
+        android:layout_below="@+id/generateButton"
+        android:layout_alignLeft="@+id/prefNumText"
+        android:layout_alignStart="@+id/prefNumText"
+        />
 
     <Button
         android:layout_width="50dp"
         android:layout_height="32dp"
         android:text="SAVE"
         android:id="@+id/popUpButton"
-        android:layout_below="@+id/generatedPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="26dp"
         android:textColor="#d5d2d2"
         android:background="#46323D"
         android:textStyle="bold"
-        android:typeface="normal" />
+        android:typeface="normal"
+        android:layout_below="@+id/generatedPassword"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

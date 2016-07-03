@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.NoSuchElementException;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button generateButton;
     private Button pButton;
     private int  number=0;
-    private EditText generatedPassword;
+    private TextView generatedPassword;
     private String passwToSave;
 
     @Override
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         charNumber = (EditText) findViewById(R.id.charNumber);
-        generatedPassword = (EditText) findViewById(R.id.generatedPassword);
+        generatedPassword = (TextView) findViewById(R.id.generatedPassword);
         generateButton = (Button) findViewById(R.id.generateButton);
 
 //        generate button in use get input from charNumber(EditText) and use Passw.java, charNumber()
