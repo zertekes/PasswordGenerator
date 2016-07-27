@@ -1,13 +1,10 @@
 package com.nazoweb.passwordgenerator;
 
 import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +13,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.NoSuchElementException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         charNumber = (EditText) findViewById(R.id.charNumber);
         generatedPassword = (TextView) findViewById(R.id.generatedPassword);
+        generatedPassword.setMovementMethod(new ScrollingMovementMethod());
         generateButton = (Button) findViewById(R.id.generateButton);
 
 //        generate button in use get input from charNumber(EditText) and use Passw.java, charNumber()

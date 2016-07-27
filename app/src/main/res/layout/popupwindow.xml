@@ -7,7 +7,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:text="SAVE"
+        android:text="@string/save"
         android:id="@+id/save"
         android:background="#0a8407"
         android:textColor="#d5d2d2"
@@ -19,11 +19,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Add a name to save the"
+        android:text="@string/add_a_name_to_save_the"
         android:id="@+id/textView2"
         android:layout_marginTop="72dp"
         android:textIsSelectable="false"
-        android:textSize="22dp"
+        android:textSize="22sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -39,10 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text=" password:"
+        android:text="@string/password"
         android:id="@+id/textView3"
         android:layout_marginTop="25dp"
-        android:textSize="22dp"
+        android:textSize="22sp"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
